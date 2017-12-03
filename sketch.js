@@ -72,5 +72,5 @@ function mousePressed() {
   text("\""+title+"\", 2017", width*0.3, height*0.8);
           
   // prevent default
-  return false;
+  //return false;
 }
