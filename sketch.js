@@ -6,25 +6,26 @@ var leadIn = ["The ", "A ", "Day of ", "Yesterday's ", "Tomorrow's ", "We are ",
 var leadOut = [" with us", " of course", " once", " at last", " over", " underneath" ];
 
 function preload() {
-          words = loadStrings("assets/dictionary.txt");
+    words = loadStrings("assets/dictionary.txt");
 
 }
+
 function setup() {
     createCanvas(600, 600);
     spacer = 20;
-      y = 20;
-      word = "";
-      var tindex = int(random(words.length));
-      var lindex = int(random(leadIn.length));
-      var oindex = int(random(leadOut.length));
-      title = leadIn[lindex] + words[tindex] + leadOut[oindex];
-  print(title+"\n");
-  noLoop();  // Run once and stop
+    y = 20;
+    word = "";
+    var tindex = int(random(words.length));
+    var lindex = int(random(leadIn.length));
+    var oindex = int(random(leadOut.length));
+    title = leadIn[lindex] + words[tindex] + leadOut[oindex];
+    print(title+"\n");
+    noLoop();  // Run once and stop
 }
 
 function draw() {
-     background(0);
-  fill(255);
+    background(0);
+    fill(255);
 
   for (var x = spacer*2; x <= 100; x+= spacer) {
     for (var y = spacer*2; y <= 100; y += spacer) {
@@ -43,8 +44,13 @@ function draw() {
    
 }
 
-function keyPressed() {
-  if (key == 's') {
-    saveFrame(title+".png");
-  }
+function mousePressed() {
+    var tindex = int(random(words.length));
+    var lindex = int(random(leadIn.length));
+    var oindex = int(random(leadOut.length));
+    title = leadIn[lindex] + words[tindex] + leadOut[oindex];
+    print(title+"\n");
+          
+  // prevent default
+  return false;
 }
