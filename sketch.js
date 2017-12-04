@@ -13,7 +13,6 @@ function preload() {
 }
 
 function setup() {
-    createCapture(VIDEO);
     createCanvas(600, 600);
     spacer = 20;
     y = 20;
