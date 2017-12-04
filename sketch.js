@@ -9,7 +9,7 @@ var lindex;
 var oindex;
 
 function preload() {
-    words = loadStrings("assets/dictionary.txt");
+    words = loadStrings("data/dictionary.txt");
 }
 
 function setup() {
