@@ -35,7 +35,7 @@ function draw() {
 }
 
 function mousePressed() {
-    res = 1;
+  res = 1;
 }
 
 function mouseReleased() {
