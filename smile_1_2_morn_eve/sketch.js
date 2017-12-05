@@ -14,7 +14,6 @@ function preload() {
 
 function setup() {
   createCanvas(750, 520);
-  background(255);
   fill(0);
 
   textFont(font);
@@ -24,6 +23,7 @@ function setup() {
 }
 
 function draw() {
+  background(255);
   if (res>=0.8) {
     index = 1;
   }
