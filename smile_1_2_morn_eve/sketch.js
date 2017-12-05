@@ -9,7 +9,7 @@ var end = "ning";
 var index = 0;
 
 function preload() {
-  font = loadFont("fonts/EBGaramond-Regular.ttf");
+  font = loadFont("../fonts/EBGaramond-Regular.ttf");
 }
 
 function setup() {
