@@ -78,7 +78,6 @@ function draw() {
 
   typewriteText();
 
-
   if (theyAreSmiling == false) {
     if (frame == 0) {
       counter = 0;
@@ -100,7 +99,6 @@ function typewriteText() {
     counter++;
   }
   text(detail+poems[index].substring(0, counter)+underscore, 40, 40, width, height);
-
 }
 
 function mousePressed() {
