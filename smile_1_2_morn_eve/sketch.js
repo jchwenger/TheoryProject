@@ -19,7 +19,7 @@ function setup() {
   textFont(font);
   textSize(110);
   textAlign(CENTER);
-  res = 1;
+  res = 0;
 }
 
 function draw() {
