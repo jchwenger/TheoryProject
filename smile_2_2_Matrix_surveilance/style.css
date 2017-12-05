@@ -6,5 +6,6 @@ body {
   margin: 0;
   display: flex;
   padding: 10;
-  justify-content: center;
+  justify-content: left;
+  background-color: #000000;
 }
