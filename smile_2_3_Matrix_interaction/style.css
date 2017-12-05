@@ -1,0 +1,10 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  padding: 10;
+  justify-content: center;
+}
