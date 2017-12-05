@@ -1,9 +1,9 @@
 var font;
 var res, fontSize;
 
-var locations = {"New Cross,\n", "Dalston,\n"};
+var locations = ["New Cross,\n", "Dalston,\n"];
 var and = "this ";
-var zeitgeist = {"drab grey mor", "cock-a-hoop eve"};
+var zeitgeist = ["drab grey mor", "cock-a-hoop eve"];
 var end = "ning";
 
 var index = 0;
