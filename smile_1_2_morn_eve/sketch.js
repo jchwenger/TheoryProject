@@ -9,8 +9,7 @@ var end = "ning";
 var index = 0;
 
 function preload() {
-  fontSize = 110;
-  font = loadFont("fonts/EBGaramond-Regular.ttf", fontSize);
+  font = loadFont("fonts/EBGaramond-Regular.ttf");
 }
 
 function setup() {
@@ -19,6 +18,7 @@ function setup() {
   fill(0);
 
   textFont(font);
+  textSize(110);
   textAlign(CENTER);
   res = 1;
 }
