@@ -10,7 +10,7 @@ var index = 0;
 
 function preload() {
   fontSize = 110;
-  font = loadFont("../fonts/EBGaramond-Regular.ttf", fontSize);
+  font = loadFont("fonts/EBGaramond-Regular.ttf", fontSize);
 }
 
 function setup() {
