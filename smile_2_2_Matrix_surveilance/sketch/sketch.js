@@ -7,13 +7,7 @@
 var font;
 var res, detail, underscore;
 
-var poems = [
-  "Be merry now, twat!",
-  "Come on, don't be an arse, a little smile, please...",
-  "Aaah, much better!",
-  "Ok it's too much now, cut the smile, git.",
-  "It was nice... foolish, rather... of you to try. Now be gone!"
-]
+var poems = ["Smile, you are being watched...", "See? You can't say I hadn't warned you!"];
 
 var index = 0;
 
@@ -48,71 +42,56 @@ function setup() {
   theyAreSmiling = false;
   theySmiled = false;
 
-  frame = 0;
   counter = 0;
 
   blinkTime = millis();
   blinkOn = true;
-
 }
 
 function draw() {
   background(0);
 
-    if (res > 0.8) {
-      if (theyAreSmiling == false) {
-        frame = 0;
-      }
-      theyAreSmiling = true;
+  if (res>=0.8) {
+    if (theyAreSmiling == false) {
+      frame = 0;
     }
-    if (res < 0.8) {
-      if (theyAreSmiling == true) {
-        theySmiled = true;
-        frame = 0;
-      }
-      theyAreSmiling = false;
-    }
-
-    if (blinkOn) {
-      underscore = "_";
-    } else {
-      underscore = "";
-    }
-
-    if (millis() - 500 > blinkTime) {
-      blinkTime = millis();
-      blinkOn = !blinkOn;
-    }
-
-    typewriteText();
-
-    if (theyAreSmiling == false && theySmiled == false) {
-      if (frame == 60) {
-        counter = 0;
-        index = 1;
-      }
-    }
-
+    theyAreSmiling = true;
+  }
+  if (res<0.8) {
     if (theyAreSmiling == true) {
-      if (frame == 0) {
-        counter = 0;
-        index = 2;
-      }
-
-      if (frame == 50) {
-        counter = 0;
-        index = 3;
-      }
+      //theySmiled = true;
+      frame = 0;
     }
+    theyAreSmiling = false;
+  }
 
-    if (theySmiled == true) {
-      if (frame == 0) {
-        counter = 0;
-        index = 4;
-      }
+  if (blinkOn) {
+    underscore = "_";
+  } else {
+    underscore = "";
+  }
+
+  if (millis() - 500 > blinkTime) {
+    blinkTime = millis();
+    blinkOn = !blinkOn;
+  }
+
+  typewriteText();
+
+  if (theyAreSmiling == false) {
+    if (frame == 0) {
+      counter = 0;
+      index = 0;
     }
+  }
 
-    frame++;
+  if (theyAreSmiling == true) {
+    if (frame == 0) {
+      counter = 0;
+      index = 1;
+    }
+  }
+  frame++
 }
 
 function typewriteText() {
