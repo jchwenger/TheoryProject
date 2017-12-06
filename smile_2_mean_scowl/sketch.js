@@ -1,3 +1,9 @@
+// Preparation for multiple sketches in one page, which I could not yet achieve.
+// (The instances stacked horizontally instead of vertically...)
+// The source for the method: http://www.joemckaystudio.com/multisketches/
+// https://github.com/processing/p5.js/wiki/Global-and-instance-mode
+// https://p5js.org/examples/instance-mode-instantiation.html
+
 var sketch1 = function(p) {
 
   var font;
