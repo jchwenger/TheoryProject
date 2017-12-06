@@ -1,8 +1,4 @@
-// Found this solution for the blinking cursor here:
-// https://forum.processing.org/two/discussion/11790/does-anybody-know-how-to-create-a-blinking-cursor
-
-// Found the typewriter effect here:
-// https://forum.processing.org/two/discussion/1823/typewrite-effect-typing-one-by-one-with-delay-on-the-strings
+// Random word generator pilfered and adapted from Lior Ben-Gai, November 2017
 
 var font;
 var res;
