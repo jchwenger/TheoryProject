@@ -115,6 +115,7 @@ function staticPoem () {
 
 function mousePressed() {
   noLoop();
+  saveCanvas();
 }
 
 function mouseReleased() {
