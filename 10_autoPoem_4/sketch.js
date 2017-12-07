@@ -115,7 +115,7 @@ function staticPoem () {
 
 function mousePressed() {
   noLoop();
-  saveCanvas();
+  saveCanvas("\""+title+"\", 2017");
 }
 
 function mouseReleased() {
