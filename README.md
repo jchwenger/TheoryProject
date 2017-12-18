@@ -2,7 +2,7 @@
 # A repository of computational artworks exploring the interaction between computer vision and text
 # by Guy Morgan and Jérémie Wenger
 
-Click the following links to access the GitHub pages for these projects (most of them using a mouse click as interaction:
+Click the following links to access the GitHub pages for these projects (most of them using a mouse click as interaction):
 
 [Example 1: ‘grump’](https://jchwenger.github.io/TheoryProject/01_smile_1_words_grump/)
 
